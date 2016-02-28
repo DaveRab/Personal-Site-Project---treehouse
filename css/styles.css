@@ -109,17 +109,21 @@ ul.skills {
   text-align: center;
 }
 
-.skills li {
+.skills a{
   border-radius: 6px;
   display: inline-block;
-  background: #ff9904;
+  background: #f3d03e;
   color: white;
   padding: 5px 10px;
   margin: 2px;
 }
 
-.skills li:nth-child(odd) {
-  background: #0399ff;
+.skills a:nth-child(odd) {
+  background: #013088;
+}
+
+.skills a:hover, .skills a:hover:nth-child(odd){
+	background: #a2a9af;
 }
 
 footer {
