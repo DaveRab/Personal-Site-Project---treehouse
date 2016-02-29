@@ -104,6 +104,29 @@ header .profile-image:hover {
   border-color: #f3d03e;
 }
 
+.quote-card {
+  margin: 30px 30px 0px 30px;
+  padding: 20px 40px  0px 40px;
+  max-width: 450px;
+  text-align: center;
+  border-radius: 6px;
+  transition: all .5s;
+}
+
+.quote-card 	q {
+	font-style: italic;
+	font-weight: 900;
+}
+
+.quote-image {
+  display: inline;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 3px solid white;
+  transition: all .5s;
+}
+
 ul.skills {
   padding: 0;
   text-align: center;
@@ -173,6 +196,42 @@ a.social:hover {
   clear: both;
 }
 
+/*Styles for experience.html page */
+
+.experience-card {
+  margin: 30px;
+  padding: 20px 40px 40px;
+  max-width: 750px;
+  text-align: left;
+  background: #fff;
+  border-bottom: 4px solid #ccc;
+  border-radius: 6px;
+  transition: all .5s;
+}
+
+.experience-card:hover {
+  border-color: #f3d03e;
+}
+
+.experience-card h2 {
+text-align: center;
+}
+
+.experience-list {
+ list-style: none;
+ padding: 0px;
+}
+
+.experience-list {
+font-weight: 600;
+}
+
+.experience-list ul {
+list-style: none;
+padding: 0px 0px 10px 0px;
+font-weight: 400;
+}
+
 /* Styles for larger screens */
 @media screen and (min-width: 720px) {
   
@@ -183,6 +242,7 @@ a.social:hover {
       -ms-flex-pack: distribute;
       justify-content: space-around;
       margin: 0 auto;
+	  flex-wrap: wrap;
   }
 
   header {
