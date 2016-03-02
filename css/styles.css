@@ -30,6 +30,7 @@ a:hover {
   padding: 10px;
   position: fixed;
   text-align: center;
+  z-index: 100;  /*fixes an error with .profile-image popping through .main-nav if .main-nav is overlapping .profile-image as page scrolls */
 }
 .nav {
   display: flex;
@@ -105,21 +106,25 @@ header .profile-image:hover {
 }
 
 .quote-card {
-  margin: 30px 30px 0px 30px;
-  padding: 20px 40px  0px 40px;
-  max-width: 450px;
+  margin: auto 0;
+  padding: 10px;
+  width:100%;
   text-align: center;
   border-radius: 6px;
   transition: all .5s;
 }
 
-.quote-card 	q {
+.quote-card q {
 	font-style: italic;
 	font-weight: 900;
 }
 
+.quote-card p {
+	margin-bottom: 0;
+	}
+
 .quote-image {
-  display: inline;
+  display: inline-block;
   width: 50px;
   height: 50px;
   border-radius: 50%;
@@ -177,21 +182,21 @@ footer ul li {
 a.social {
   display: inline-block;
   text-indent: -9999px;
-  margin-left: 5px;
-  width: 30px;
-  height: 30px;
-  background-size: 30px 30px;
+  margin-left: -10px;
+  width: 45px;
+  height: 45px;
+  background-size: 45px 45px;
   opacity: .4;
   transition: all .5s;
 }
 a.twitter {
-  background-image: url(images/twitter.svg);
+  background-image: url(../images/twitter.svg);
 }
 a.linkedin {
-  background-image: url(images/linkedin.svg);
+  background-image: url(../images/linkedin.svg);
 }
 a.github {
-  background-image: url(images/github.svg);
+  background-image: url(../images/github.svg);
 }
 a.social:hover {
   opacity: 1;
